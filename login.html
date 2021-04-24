@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>    
+<body>
+    
+    <section>
+        <div class="container">
+            <div class="user signinbx">
+                <div class="imgbx">
+                    <img src="4.jpg">
+                </div>
+                <div class="formbx">
+                    <form action="login.php" method="POST">
+                        <h2>Login</h2>
+                        <input type="text" name="Username" placeholder="Username">
+                        <input type="password" name="Password" placeholder="Password">
+                        <input type="submit" name="Login" value="Login">
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign up.</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="user signupbx">
+                <div class="formbx">
+                    <form action="Registration.php" method="POST">
+                        <h2>Create an account?</h2>
+                        <input type="text"  name="Username" placeholder="Username">
+                        <input type="email"  name="Email" placeholder="Email Address">
+                        <input type="password"  name="Password" placeholder="Create Password">
+                        <input type="password"  name="cnf_password" placeholder="Confirm Password">
+                        <input type="number"  name="number" placeholder="Your contact number">
+                        <input type="submit"  name="signup"  value="Signup">
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign in.</a></p>
+                    </form>
+                </div>
+                <div class="imgbx">
+                    <img src="8.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleForm(){
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }    
+    </script>
+</body>
+</html>

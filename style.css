@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffe53c;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 40px 100px;
+}
+header .logo{
+    font-weight: 700;
+    position: relative;
+    font-size: 24px;
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header ul li{
+    display: flex;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin:0 15px;
+    text-decoration: none;
+    color:#111;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.slider{
+    overflow: hidden;
+    height: 460px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    width: 100%;
+    float: left;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    animation: 20s imges infinite;
+}
+@keyframes imges{
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -200%;
+    }
+    90%{
+        left: -200%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.btn1 button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 400px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn2 button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 800px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.price{
+    padding-left: 50px;
+    padding-top: 100px;
+}
+ label{
+    color: #111;
+}
+.compare{
+    padding-left: 50px;
+    padding-top: 50px;
+    color: #111;
+}
+
+
